@@ -1,0 +1,35 @@
+table{
+    width:100vw;
+    table-layout:auto;
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid orchid;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+td{
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;}
+    .popup {
+ 
+        position: fixed;
+        z-index: 6000000; 
+        width: 100vw; 
+        height: 100vh; 
+        top: 0; 
+        left: 0;
+        display: flex; 
+       
+        justify-content: center; 
+        align-items: center; 
+        background-color: rgba(0, 0, 0, 0.8); 
+        overflow-y: auto;
+    }

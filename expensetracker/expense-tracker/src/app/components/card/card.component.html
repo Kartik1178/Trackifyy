@@ -1,0 +1,26 @@
+<div   (click)="onCardClick()" [style.border-color]="category.design.color" class="rounded-md h-52 z-0 w-80 m-5 border-2 text-white" 
+>
+    
+<div class="flex flex-row h-full">
+<div [style.background-color]="category.design.color" class=" flex flex-col justify-between w-1/2 h-full ">
+ <div class="m-4">
+    <h1 class="font-bold">{{category.name}}</h1> 
+</div> 
+  <div class="flex flex-row m-4">
+    <i *ngFor=" let icon of category.design.icons"  [class]="icon" class="m-1"></i>
+    
+    
+  </div>
+  <div class="m-4 " >
+    <span class="text-sm " *ngFor="let desc of category.design.desc">{{desc}}</span>
+    
+  </div>
+</div>
+<div class="flex flex-col justify-center ml-4">
+<div class="text-sm text-gray-400 font-semibold">Total Spend</div>
+<h1 class="text-green-400 text-2xl font-bold">{{category.totalExpenses}}</h1>
+</div>
+
+</div>
+
+</div>
